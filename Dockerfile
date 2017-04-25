@@ -17,4 +17,6 @@ RUN bundle install
 
 ADD . /taskwarrior-web
 
+ADD .env .env
+
 CMD ["/bin/bash"]

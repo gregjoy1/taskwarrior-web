@@ -26,6 +26,9 @@ Gem::Specification.new do |s|
   s.add_dependency('sinatra-simple-navigation')
   s.add_dependency('rack-flash3')
   s.add_dependency('json', '~> 1.8')
+  s.add_dependency('twilio-ruby', '~> 4.11.1')
+  s.add_dependency('dotenv', '~> 2.2.0')
+  s.add_dependency('tux', '~> 0.3.0')
 
   s.add_development_dependency('rake')
   s.add_development_dependency('rack-test')
