@@ -2,6 +2,7 @@ require 'bundler'
 require 'rspec/core/rake_task'
 require 'dotenv/load'
 require 'twilio-ruby'
+require 'pry'
 
 require File.expand_path("#{File.dirname(__FILE__)}/lib/taskwarrior-web")
 

@@ -41,6 +41,8 @@ module TaskwarriorWeb
         @completed_tasks = ::TaskwarriorWeb::Task.query('end.after:today-day completed')
 
         @uncompleted_tasks = ::TaskwarriorWeb::Task.query(status: 'pending').select do |task|
+          next if task.due.nil?
+
           overdue = (task.due.to_time < 0.day.ago)
           due_today = (task.due.to_time.today?)
 
@@ -50,5 +52,4 @@ module TaskwarriorWeb
     end
   end
 end
-
 

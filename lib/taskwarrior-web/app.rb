@@ -7,6 +7,7 @@ require 'rinku'
 require 'digest'
 require 'sinatra/simple-navigation'
 require 'rack-flash'
+require 'pry'
 
 class TaskwarriorWeb::App < Sinatra::Base
   autoload :Helpers, 'taskwarrior-web/helpers'
